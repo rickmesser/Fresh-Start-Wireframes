@@ -1,0 +1,96 @@
+!!!
+%html.no-js{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title Fresh Start Wireframes!
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %link{:href => "humans.txt", :rel => "author"}/
+    %link{:href => "_/css/main.css", :rel => "stylesheet"}/
+    %link{:href => "_/css/responsive.css", :rel => "stylesheet"}/
+    :css
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    %link{:href => "_/css/responsive.css", :rel => "stylesheet"}/
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    / Touch icons
+
+    %link{:href => "_/img/favicon.ico", :rel => "shortcut icon"}/
+    %link{:href => "_/img/apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}/
+    %link{:href => "_/img/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}/
+    %link{:href => "_/img/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}/
+    %link{:href => "_/img/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}/
+  %body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand{:href => "#"} Fresh-Start Wireframes
+          .nav-collapse.collapse
+            %ul.nav.pull-right
+              %li
+                %a{:href => "#about"} Link 1
+              %li
+                %a{:href => "#contact"} Link 2
+              %li.divider-vertical
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  Dropdown
+                  %b.caret
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#"} Sub link 1
+                  %li
+                    %a{:href => "#"} Sub link 2
+                  %li
+                    %a{:href => "#"} Sub link 3
+                  %li.divider
+                  %li
+                    %a{:href => "#"} Separated link 1
+                  %li.divider
+                  %li
+                    %a{:href => "#"} Separated link 2
+          / /.nav-collapse
+    .container
+      .hero-unit
+        %h1#fitit Fresh-Start Wireframes
+        :markdown 
+          Built with [Fresh-Start](https://github.com/rickmesser/Fresh-Start), a beginning developer's start point with some great modern tools already baked in, Fresh-Start Wireframes strip out un-neccesary code and modules and focus on greyscale building blocks for rapid prototyping with bootstrap's responsive grid.
+        %a.btn.btn-primary.btn-large{:href => "https://github.com/rickmesser/Fresh-Start"} Learn more »
+      .row
+        .span4
+          %h2 Wireframes in action
+          :markdown 
+            Check break-points really quickly by working with pre-processors like haml and less. Everything in the project is ready to go so feel free to play around with Bootstrap's [responsive grid](http://twitter.github.io/bootstrap/scaffolding.html#gridSystem) without consequence!
+          
+        .span4
+          %h2 Hash Out Those Ideas
+          %p Test your ideas and see how sections behave on different devices.
+        .span4
+          %h2 Non-commital Makes It Easy
+          %p Don't feel like you have to commit to things you create with this framework. Just try out an idea and if it works, great, if not, just re-start. Liberate your workflow!
+
+    / /container
+    / javascript
+    %script{:src => "_/js/vendor/jquery-1.9.1.min.js"}
+    %script{:src => "_/js/plugins.js"}
+    %script{:src => "_/js/bootstrap-transition.js"}
+    %script{:src => "_/js/bootstrap-alert.js"}
+    %script{:src => "_/js/bootstrap-modal.js"}
+    %script{:src => "_/js/bootstrap-dropdown.js"}
+    %script{:src => "_/js/bootstrap-scrollspy.js"}
+    %script{:src => "_/js/bootstrap-tab.js"}
+    %script{:src => "_/js/bootstrap-tooltip.js"}
+    %script{:src => "_/js/bootstrap-popover.js"}
+    %script{:src => "_/js/bootstrap-button.js"}
+    %script{:src => "_/js/bootstrap-collapse.js"}
+    %script{:src => "_/js/bootstrap-carousel.js"}
+    %script{:src => "_/js/bootstrap-typeahead.js"}
+    %script{:src => "_/js/vendor/jquery.fittext.js"}
+    %script{:src => "_/js/main.js"}
+
